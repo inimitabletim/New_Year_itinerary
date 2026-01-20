@@ -5,7 +5,7 @@ const itineraryData = {
     title: "初一：漫活北投",
     date: "2/17 (二)",
     desc: "飯店 Check-in & 北投散策",
-    warning: "春節期間 Check-in 可能延至 18:00，建議先致電飯店確認。",
+    warning: "⚠️ 梅庭目前整修中(預計2026重開)，若未開放建議改去「普濟寺」。",
     events: [
       {
         time: "14:00",
@@ -16,17 +16,17 @@ const itineraryData = {
       },
       {
         time: "15:00",
-        title: "北投公園散策",
-        desc: "參觀北投圖書館、溫泉博物館、地熱谷。",
-        location: "北投地熱谷",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=北投地熱谷"
+        title: "北投公園深度遊",
+        desc: "除了圖書館與地熱谷，推薦去「少帥禪園」喝下午茶或看夕陽 (需預約)。",
+        location: "少帥禪園",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=少帥禪園"
       },
       {
         time: "17:30",
-        title: "晚餐",
-        desc: "滿來拉麵、樂雅樂 或 蓬萊台菜 (務必提早候位/訂位)。",
-        location: "北投樂雅樂",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=北投樂雅樂"
+        title: "晚餐選擇",
+        desc: "在地首選：**矮仔財滷肉飯** (北投中繼市場) 或 **滿來拉麵**。",
+        location: "北投中繼市場",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=北投中繼市場"
       },
       {
         time: "20:00",
@@ -39,8 +39,8 @@ const itineraryData = {
   2: {
     title: "初二：陽明花季",
     date: "2/18 (三)",
-    desc: "賞櫻花 & 美軍宿舍群",
-    warning: "陽明山實施交通管制，請務必搭乘公車 (小9, 230) 上山。",
+    desc: "賞櫻花 & 豆留森林",
+    warning: "💡 豆留森林 (Cama Coffee) 極熱門，想去一定要現在訂位！",
     events: [
       {
         time: "09:00",
@@ -50,24 +50,18 @@ const itineraryData = {
         mapUrl: "https://www.google.com/maps/search/?api=1&query=捷運北投站"
       },
       {
-        time: "10:00",
-        title: "陽明山花鐘",
-        desc: "2026 花季賞櫻、杜鵑。",
-        location: "陽明山花鐘",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=陽明山花鐘"
+        time: "10:30",
+        title: "Cama 豆留森林",
+        desc: "【達人推薦】號稱「陽明山上的京都」，日式老屋咖啡廳 (需預約)。",
+        location: "Cama Coffee Roasters 豆留森林",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Cama Coffee Roasters 豆留森林"
       },
       {
-        time: "12:00",
-        title: "草山小鎮午餐",
-        desc: "美軍宿舍群，建議吃 BRICK YARD 33 1/3 或 阿蓋爾俱樂部。",
+        time: "13:30",
+        title: "草山小鎮 & 花鐘",
+        desc: "美軍宿舍群拍照，散步至花鐘賞櫻。",
         location: "草山小鎮",
         mapUrl: "https://www.google.com/maps/search/?api=1&query=草山小鎮"
-      },
-      {
-        time: "16:00",
-        title: "搭車下山",
-        desc: "提早下山避開塞車，準備晚餐。",
-        location: null
       },
       {
         time: "17:30",
@@ -79,66 +73,73 @@ const itineraryData = {
     ]
   },
   3: {
-    title: "初三：淡水夕照",
+    title: "初三：淡水藝文",
     date: "2/19 (四)",
-    desc: "古蹟巡禮 & 漁人碼頭",
-    warning: "一定要搭捷運去淡水，開車會塞爆。",
+    desc: "雲門劇場 & 渡輪夕照",
+    warning: "避開老街人擠人，我們去更有氣質的私房景點。",
     events: [
       {
         time: "10:00",
         title: "捷運出發",
-        desc: "搭乘捷運至淡水站。",
-        location: "淡水老街",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=淡水老街"
+        desc: "搭乘捷運至淡水站，轉公車紅26。",
+        location: "淡水捷運站",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=淡水捷運站"
       },
       {
-        time: "14:00",
-        title: "紅毛城 & 渡輪",
-        desc: "參觀古蹟後，從碼頭搭船至漁人碼頭。",
-        location: "紅毛城",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=紅毛城"
+        time: "11:00",
+        title: "一滴水紀念館",
+        desc: "【私房景點】日本移築過來的百年古宅，免費參觀。",
+        location: "一滴水紀念館",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=一滴水紀念館"
       },
       {
-        time: "17:00",
-        title: "夕陽 & 回程",
-        desc: "一定要在 17:00 前離開淡水，前往北投。",
+        time: "12:30",
+        title: "雲門劇場園區",
+        desc: "就在旁邊，雖然有星巴克但更推薦「大樹書房」喝咖啡看展。",
+        location: "雲門劇場",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=雲門劇場"
+      },
+      {
+        time: "16:00",
+        title: "漁人碼頭夕陽",
+        desc: "搭渡輪從碼頭回老街，或直接在情人橋看夕陽。",
         location: "漁人碼頭",
         mapUrl: "https://www.google.com/maps/search/?api=1&query=淡水漁人碼頭"
       },
       {
         time: "18:00",
         title: "晚餐：奇岩一號 (已訂)",
-        desc: "大地酒店內 (北投區奇岩路1號)，需步行或搭車上坡。",
+        desc: "大地酒店內，需計程車前往。",
         location: "北投大地酒店",
         mapUrl: "https://www.google.com/maps/search/?api=1&query=北投大地酒店"
       }
     ]
   },
   4: {
-    title: "初四：親子放電",
+    title: "初四：在地美食",
     date: "2/20 (五)",
-    desc: "復興公園 & 賦歸",
+    desc: "復興公園 & 市場尋寶",
     warning: null,
     events: [
       {
-        time: "09:30",
-        title: "退房",
-        desc: "享用早餐，整理行李。",
-        location: null
-      },
-      {
         time: "10:00",
-        title: "復興公園",
-        desc: "免費足湯 + 兒童城堡遊戲場。",
+        title: "復興公園泡腳",
+        desc: "與當地阿公阿嬤一起享受溫泉足湯，孩子玩城堡溜滑梯。",
         location: "北投復興公園",
         mapUrl: "https://www.google.com/maps/search/?api=1&query=北投復興公園"
       },
       {
         time: "12:00",
-        title: "午餐 & 回家",
-        desc: "粟家牛肉麵/吳家牛肉麵，帶著伴手禮回家。",
-        location: "粟家牛肉麵",
-        mapUrl: "https://www.google.com/maps/search/?api=1&query=粟家牛肉麵"
+        title: "北投市場尋寶",
+        desc: "【必吃名單】高記茶莊(紅茶)、陳家剉冰、阿泓潤餅。",
+        location: "北投中繼市場",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=北投中繼市場"
+      },
+      {
+        time: "14:00",
+        title: "滿載而歸",
+        desc: "帶著放鬆的身心與伴手禮回家。",
+        location: null
       }
     ]
   }
