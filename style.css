@@ -1,0 +1,229 @@
+:root {
+  --primary-gold: #d4af37;
+  --primary-red: #c41e3a;
+  --bg-dark: #1a1a1a;
+  --bg-card: #2d2d2d;
+  --text-light: #f5f5f5;
+  --text-dim: #a0a0a0;
+  --accent-green: #2ecc71;
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  padding-bottom: 80px; /* Space for footer/nav if fixed */
+}
+
+/* Hero Section */
+.hero {
+  background:
+    linear-gradient(135deg, #2c3e50, #000000 80%),
+    url("https://images.unsplash.com/photo-1572099606223-6e29045d7de3?q=80&w=2070&auto=format&fit=crop");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: var(--shadow-lg);
+}
+
+.hero h1 {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary-gold);
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: var(--text-dim);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Countdown */
+#countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.time-block span:first-child {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.time-block .label {
+  font-size: 0.7rem;
+  color: var(--primary-gold);
+  text-transform: uppercase;
+}
+
+/* Day Selector */
+.day-selector {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 1rem;
+  position: sticky;
+  top: 0;
+  background: var(--bg-dark);
+  z-index: 100;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-btn.active {
+  background: var(--primary-red);
+  color: white;
+  box-shadow: 0 4px 12px rgba(196, 30, 58, 0.4);
+}
+
+/* Itinerary Content */
+.content-area {
+  padding: 1rem 1.5rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  border-left: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--primary-gold);
+}
+
+.time-badge {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--primary-gold);
+  font-weight: 500;
+}
+
+.activity-card {
+  margin-top: 0.5rem;
+  background: var(--bg-card);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.activity-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.activity-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.location-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent-green);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(46, 204, 113, 0.1);
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.location-link:hover {
+  background: rgba(46, 204, 113, 0.2);
+}
+
+.tag {
+  display: inline-block;
+  background: var(--primary-red);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+/* Warnings */
+.warning-box {
+  background: rgba(231, 76, 60, 0.15);
+  border: 1px solid rgba(231, 76, 60, 0.5);
+  color: #ff9999;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
