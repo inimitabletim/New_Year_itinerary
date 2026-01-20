@@ -1,0 +1,22 @@
+{
+  "name": "2026 北投新春之旅",
+  "short_name": "北投新春",
+  "description": "2026農曆春節北投四天三夜家庭溫泉之旅",
+  "theme_color": "#d4af37",
+  "background_color": "#1a1a1a",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3210/3210036.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3210/3210036.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
