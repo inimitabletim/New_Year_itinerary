@@ -218,5 +218,24 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
   });
 });
 
+// Share Button Logic
+document.getElementById('share-btn').addEventListener('click', async () => {
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: '2026 北投新春之旅',
+        text: '這是有規劃好的北投四天三夜行程表，快來看看！',
+        url: window.location.href
+      });
+    } catch (err) {
+      console.log('Error sharing:', err);
+    }
+  } else {
+    // Fallback for desktop/unsupported
+    navigator.clipboard.writeText(window.location.href);
+    alert('網址已複製到剪貼簿！');
+  }
+});
+
 // Initial Render
 renderDay(1);
