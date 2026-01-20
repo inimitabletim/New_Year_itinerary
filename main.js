@@ -131,7 +131,7 @@ const itineraryData = {
       {
         time: "12:00",
         title: "北投市場尋寶",
-        desc: "【必吃名單】高記茶莊(紅茶)、陳家剉冰、阿泓潤餅。",
+        desc: "高記茶莊(紅茶)、陳家剉冰、阿泓潤餅。",
         location: "北投中繼市場",
         mapUrl: "https://www.google.com/maps/search/?api=1&query=北投中繼市場"
       },
