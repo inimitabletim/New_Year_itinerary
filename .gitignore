@@ -1,1 +1,17 @@
+# Backup folders
 .claude.backup.*/
+
+# Claude Code settings
+.claude/
+
+# Quality tools
+.qlty/
+
+# VSCode settings
+.vscode/
+
+# Node version
+.nvmrc
+
+# MCP config
+mcp_servers.json
